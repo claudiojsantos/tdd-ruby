@@ -24,6 +24,12 @@ describe "Matchers de Comparação" do
     it 'be_between exclusive' do
         expect(3).to be_between(1, 4).exclusive
     end
+    
+    # it 'be_between exclusive with fail', :aggregate_failures do
+    #     expect(3).to be_between(1, 4).exclusive
+    #     expect(0).to be_between(1, 4).exclusive
+    #     expect(7).to be_between(1, 4).exclusive
+    # end
 
     it 'match' do
         expect('claudio@sistnet.com.br').to match(/..@../)
